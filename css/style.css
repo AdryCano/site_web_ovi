@@ -50,7 +50,7 @@ nav{
 	background: #C0C0C0;
 	border: solid;
 	border-color: #000000;
-	border-radius: 50px;
+	border-radius: 20px;
 	border-top-right-radius: 0;
 	border-top-left-radius: 0;
 
@@ -75,7 +75,7 @@ li{
 a{
 	text-decoration: none;
 	font-size: 35px;
-	color: #E30000;
+	color: #000000;
 }
 
 section{
