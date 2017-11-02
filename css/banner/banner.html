@@ -21,7 +21,18 @@ body {
     height: 100%;
     margin: 0px;
 }
-
+body {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    -moz-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    perspective: 1400px;
+    -webkit-perspective: 1400px;
+    -moz-perspective: 1400px;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    background-color: transparent;
+}
 .gwd-img-18wj {
     position: absolute;
     width: 1000px;
@@ -83,12 +94,7 @@ body {
         left: -192px;
         -moz-animation-timing-function: linear;
     }
-}
-.htmlNoPages .gwd-gen-fy2pgwdanimation {
-    animation: gwd-gen-fy2pgwdanimation_gwd-keyframes 11.2s linear 0s infinite normal forwards;
-    -webkit-animation: gwd-gen-fy2pgwdanimation_gwd-keyframes 11.2s linear 0s infinite normal forwards;
-    -moz-animation: gwd-gen-fy2pgwdanimation_gwd-keyframes 11.2s linear 0s infinite normal forwards;
-}</style>
+
 </head>
 
 <body class="htmlNoPages">
