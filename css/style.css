@@ -93,7 +93,7 @@ section{
 #inicio{
 	width: 1000px;
 	background: white;
-	height: 1000px;
+	height: 1500px;
 	float: left;
 	margin-top: 20px;
 	border-radius: 10px;
@@ -105,7 +105,7 @@ section{
 #lectura{
 	width: 1000px;
 	background: white;
-	height: 600px;
+	height: 1500px;
 	float: left;
 	margin-top: 20px;
 	border-radius: 10px;
@@ -129,7 +129,7 @@ section{
 #actividades{
 	width: 1000px;
 	background: white;
-	height: 600px;
+	height: 1500px;
 	float: left;
 	margin-top: 20px;
 	border-radius: 10px;
@@ -141,7 +141,7 @@ section{
 #autores{
 	width: 1000px;
 	background: white;
-	height: 600px;
+	height: 400px;
 	float: left;
 	margin-top: 20px;
 	border-radius: 10px;
