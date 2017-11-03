@@ -98,7 +98,7 @@ header{
 
 }
 
-nav{
+av{
 	width: 994px;
 	height: 70px;
 	background: #C0C0C0;
@@ -110,7 +110,7 @@ nav{
 
 }
 
-ul{
+u{
 	list-style: none;
 	margin: auto;
 	padding-top: 4px;
@@ -118,7 +118,7 @@ ul{
 
 }
 
-li{
+l{
 	float: left;
 	list-style-type: none;
 	padding: 10px;
@@ -126,7 +126,7 @@ li{
 
 }
 
-a{
+a*{
 	text-decoration: none;
 	font-size: 30px;
 	color: #FFFFFF;
