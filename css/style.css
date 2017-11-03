@@ -99,39 +99,7 @@ header{
 
 }
 
-av{
-	width: 994px;
-	height: 70px;
-	background: #C0C0C0;
-	border: solid;
-	border-color: #000000;
-	border-radius: 50px;
-	border-top-right-radius: 0;
-	border-top-left-radius: 0;
 
-}
-
-u{
-	list-style: none;
-	margin: auto;
-	padding-top: 4px;
-	position: relative;
-
-}
-
-l{
-	float: left;
-	list-style-type: none;
-	padding: 10px;
-	margin: 4px
-
-}
-
-a*{
-	text-decoration: none;
-	font-size: 30px;
-	color: #FFFFFF;
-}
 
 section{
 	width: 700px;
