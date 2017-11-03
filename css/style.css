@@ -26,22 +26,26 @@ body {
     list-style:none;
    }
    
-   .nav > li {
-    float:left;
-   }
    
    .nav li a {
     background-color:#000;
     color:#fff;
     text-decoration:none;
-    padding:10px 12px;
+    padding:10px 15px;
     display:block;
    }
-   
+
+
+	
    .nav li a:hover {
     background-color:#434343;
    }
    
+.nav > li {
+	float:left;
+	
+}
+		
    .nav li ul {
     display:none;
     position:absolute;
