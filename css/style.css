@@ -177,7 +177,7 @@ section{
 #lectura{
 	width: 1000px;
 	background: white;
-	height: 1000px;
+	height: 700px;
 	float: left;
 	margin-top: 20px;
 	border-radius: 10px;
@@ -189,7 +189,7 @@ section{
 #multimedia{
 	width: 1000px;
 	background: white;
-	height: 1000px;
+	height: 500px;
 	float: left;
 	margin-top: 20px;
 	border-radius: 10px;

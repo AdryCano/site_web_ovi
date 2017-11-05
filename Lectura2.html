@@ -97,59 +97,29 @@
 		<section id="lectura">
 			<article>
 				
-				<p>
-				Estimado (a) estudiante, tenga muy en cuenta la siguiente información: 
-
-                                Las bases de datos se pueden administrar desde cualquier aplicación web, permitiendo a los sitios web proveer variedad de contenido. Puesto que se puede almacenar información muy delicada o secreta en una base de datos, debería considerarse ampliamente proteger las bases de datos.
-
-                                Para consultar o almacenar cualquier información, es necesario conectarse a la base de datos, enviar una consulta válida, obtener el resultado, y cerrar la conexión. Hoy en día, el lenguaje de consultas más utilizado en esta interacción es el Lenguaje Estructurado de Consultas SQL.
-
-                                PHP no puede proteger una base de datos por sí mismo, por esta razón se tiene como objetivo orientar sobre cómo acceder y manipular bases de datos dentro de scripts de PHP.
-
+				
+				
 					
-				</p>
-				
-				<h1>Objetivo de las Lecturas</h1>
-				
-				<p>
-					Orientar sobre las acciones para aumentar la protección de una base de datos, con el fin de evitar la probabilidad de que un atacante tenga éxito en exponer o abusar de cualquier información que se tenga almacenada.
-				</p>
-				
 
-				<h1>Que es un SGBD</h1>
+				<h1>Diseño de bases de datos</h1>
 			
-				<p>
-					Un sistema gestor de base de datos (SGBD) es un conjunto de programas que permiten el almacenamiento, modificación y extracción de la información en una base de datos, además de proporcionar herramientas para añadir, borrar, modificar y analizar los datos. Los usuarios pueden acceder a la información usando herramientas específicas de consulta y de generación de informes, o bien mediante aplicaciones al efecto.
-				</p>
-				<p>
-					Estos sistemas también proporcionan métodos para mantener la integridad de los datos, para administrar el acceso de usuarios a los datos y para recuperar la información si el sistema se corrompe. Permiten presentar la información de la base de datos en variados formatos. La mayoría incluyen un generador de informes. También pueden incluir un módulo gráfico que permita presentar la información con gráficos y tablas.
-				</p>
-				<p>
-					Generalmente se accede a los datos mediante lenguajes de consulta, lenguajes de alto nivel que simplifican la tarea de construir las aplicaciones. También simplifican las consultas y la presentación de la información. Un SGBD permite controlar el acceso a los datos, asegurar su integridad, gestionar el acceso concurrente a ellos, recuperar los datos tras un fallo del sistema y hacer copias de seguridad. Las bases de datos y los sistemas para su gestión son esenciales para cualquier área de negocio, y deben ser gestionados con esmero.
-				</p>
+				<p>	El primer paso es siempre crear una base de datos, a menos que se quiera utilizar una de un tercero. Cuando se crea una base de datos, esta es asignada a un propietario, aquel que ejecutó la sentencia de creación. Usualmente, sólo el propietario (o un superusuario) puede hacer cualquier cosa con los objetos de esa base de datos. Para que otros usuarios puedan utilizarla, se les deben conceder privilegios. <p/>	
+
+<p>Las aplicaciones nunca deberían conectarse a la base de datos como su propietario o como un superusuario, porque estos usuarios pueden ejecutar cualquier consulta a su antojo; por ejemplo, modificar el esquema (p.ej., eliminar tablas) o borrar su contenido por completo.<p/>	
+
+<p>Se pueden crear distintos usuarios de una base de datos para cada aspecto de la aplicación con permisos muy limitados a los objetos de dicha base de datos. Solamente deberían otorgarse los privilegios necesarios, evitando así que el mismo usuario pueda interactuar con la base de datos en diferentes casos y uso. Esto significa que si un intruso obtiene acceso a una base de datos utilizando las credenciales de la aplicación, solamente puede efectuar los cambios que la aplicación permita.<p/>	
+
+<p>Se recomienda no implementar toda la lógica de negocio en la aplicación web (esto es, en los scripts); se ha de hacer en su lugar en el esquema de la base de datos utilizando vistas, disparadores o reglas. Si el sistema evoluciona, se tendrá por objeto abrir nuevos puertos a la base de datos, teniendo así que reimplementar la lógica en cada cliente de la base de datos por separado. Además, los disparadores se pueden utilizar para manejar campos de forma transparente y automática, lo que a menudo ayuda en la depuración de problemas con la aplicación o en el seguimiento de transacciones.</p><br/>
 				
 				
-				<h1>Recursos de Consulta:</h1>
 				
-				<p>
-				Diseño de bases de datos . (S.f.). Obtenido de: <a href="http://php.net/manual/es/security.database.design.php" target="_blank">
+				
+				<h1><p>Recursos de Consulta:<p><h1/>
+		        <p><B><SMALL><SMALL><font color=Teal>Diseño de bases de datos . (S.f.). Obtenido de:</font></SMALL></SMALL></B><a href="http://php.net/manual/es/security.database.design.php" target="_blank">
 				<B><SMALL><SMALL><font color=Teal>http://php.net/manual/es/security.database.design.php</font></SMALL></SMALL></B></a>
 				</p>
 				
-				<p>
-				Conexión a una base de datos . (S.f.). Obtenido de: <a href="http://php.net/manual/es/security.database.connection.php" target="_blank">
-				<B><SMALL><SMALL><font color=Teal>http://php.net/manual/es/security.database.connection.php</font></SMALL></SMALL></B></a>
-				</p>
 				
-				<p>				
-				Modelo de almacenamiento cifrado. (S.f.). Obtenido de: <a href="http://php.net/manual/es/security.database.storage.php" target="_blank">
-				<B><SMALL><SMALL><font color=Teal>http://php.net/manual/es/security.database.storage.php</font></SMALL></SMALL></B></a>
-				</p>
-				
-				<p>				
-				Inyección de SQL. (S.f.). Obtenido de: <a href="http://php.net/manual/es/security.database.sql-injection.php" target="_blank">
-				<B><SMALL><SMALL><font color=Teal>http://php.net/manual/es/security.database.sql-injection.php</font></SMALL></SMALL></B></a>
-				</p>
 				
 			</article>
 
